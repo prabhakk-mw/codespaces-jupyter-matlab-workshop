@@ -17,7 +17,8 @@
 
   // Codespaces by default have several images on the machine.
   // The command below frees up space on disk, and allows for larger images to be built.
-  "initializeCommand": "docker system prune --all --force",
+  // "imageCount=`docker image ls jupyter-matlab-notebook-ubuntu-2204:r2023a | wc -l` && [[ ${imageCount} -eq 1 ]] && docker system prune --all --force || echo 'MATLAB Image found.'"
+  "initializeCommand": "imageCount=`docker image ls jupyter-matlab-notebook-ubuntu-2204:r2023a | wc -l` && [[ ${imageCount} -eq 1 ]] && docker system prune --all --force || echo 'MATLAB Image found.'",
 
   "hostRequirements": {
     "cpus": 4
