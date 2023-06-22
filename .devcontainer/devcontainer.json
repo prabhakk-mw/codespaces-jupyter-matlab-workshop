@@ -11,9 +11,9 @@
   // },
 
   // Uncomment and provide NLM info if required.
-  // "remoteEnv": {
-  //   "MLM_LICENSE_FILE": "27000@hyd-prabhakk-l"
-  // },
+  "remoteEnv": {
+    "MLM_LICENSE_FILE": "27000@54.93.208.134"
+  },
 
   // Codespaces by default have several images on the machine.
   // The command below frees up space on disk, and allows for larger images to be built.
